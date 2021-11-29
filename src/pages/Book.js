@@ -30,7 +30,7 @@ export default function Book( { navigation }) {
         await api.post(`/spots/${id}/bookings`, {
             date
         }, {
-            headers: { user_id }
+            headers: { user_id } 
         })
 
         Alert.alert('Solicitação de reserva enviada.');
